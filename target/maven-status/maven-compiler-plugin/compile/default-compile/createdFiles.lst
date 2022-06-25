@@ -1,0 +1,4 @@
+fr\dauphine\miageif\CompteBancaire\CompteBancaire\Model\CompteBancaire.class
+fr\dauphine\miageif\CompteBancaire\CompteBancaire\Controller\CompteBancaireController.class
+fr\dauphine\miageif\CompteBancaire\CompteBancaire\Repository\CompteBancaireRepository.class
+fr\dauphine\miageif\CompteBancaire\CompteBancaire\CompteBancaireApplication.class
