@@ -9,6 +9,10 @@ CompteBancaire se caractérise par {"IBAN" : "FR7630004000031234567890143", "typ
 OperationBancaire se caractérise par {"id operation" : 12345, "type operation" : "VIREMENT", "IBAN source" : "FR7630004000031234567890143","IBAN destination" : "USD", "montant" : 1000.0, "date" : "2021-12-30"} 
 check  : https://github.com/samarrhilane/MicroService2_OperationBancaire
 
+The two microservices communicate by sending an HTTP request
+
+The client used is POSTMAN where we can make HTTP requests
+
 ## 2. Installation 
 
 ```
