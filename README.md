@@ -39,5 +39,5 @@ to get all bank account exist
 ## 5. Set up Docker
 
 ```
-docker build -t CompteBancaire 
+docker build -t CompteBancaire-0.0.1-SNAPSHOT.jar 
 ```
