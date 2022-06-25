@@ -91,7 +91,7 @@ public class CompteBancaireController {
         }
     }
 
-    //  "http://localhost:8080/COMPTEBANCAIRE/frais/gratuit"
+    //  "http://localhost:8080/COMPTEBANCAIRE/interet/10"
     @GetMapping("/COMPTEBANCAIRE/interet/{interet}")
     public ResponseEntity<List<CompteBancaire>> getCompteBancaireByInteret
     (@PathVariable BigDecimal interet){
@@ -181,7 +181,7 @@ public class CompteBancaireController {
     // PUT
     
     @PutMapping("/COMPTEBANCAIRE/id/{id}")
-    public ResponseEntity<CompteBancaire> upfraisCompteBancaire(@PathVariable long id, @RequestBody CompteBancaire CompteBancaire) {
+    public ResponseEntity<CompteBancaire> updateCompteBancaire(@PathVariable long id, @RequestBody CompteBancaire CompteBancaire) {
 
         Optional<CompteBancaire> CompteBancaireData = repository.findById(id);
 
@@ -200,7 +200,7 @@ public class CompteBancaireController {
 
     //  "http://localhost:8080/COMPTEBANCAIRE/id/1/frais/gratuit"
     @PutMapping("/COMPTEBANCAIRE/id/{id}/frais/{frais}")
-    public ResponseEntity<CompteBancaire> upfraisCompteBancaireForType(@PathVariable long id, @PathVariable String type) {
+    public ResponseEntity<CompteBancaire> updateCompteBancaireForType(@PathVariable long id, @PathVariable String type) {
         Optional<CompteBancaire> CompteBancaire = repository.findById(id);
 
         if (CompteBancaire.isPresent()) {
@@ -214,7 +214,7 @@ public class CompteBancaireController {
 
     //  "http://localhost:8080/COMPTEBANCAIRE/id/1/interet/100"
     @PutMapping("/COMPTEBANCAIRE/id/{id}/interet/{interet}")
-    public ResponseEntity<CompteBancaire> upfraisCompteBancaireForInteret(@PathVariable long id, @PathVariable BigDecimal interet) {
+    public ResponseEntity<CompteBancaire> updateCompteBancaireForInteret(@PathVariable long id, @PathVariable BigDecimal interet) {
         Optional<CompteBancaire> CompteBancaire = repository.findById(id);
 
         if (CompteBancaire.isPresent()) {
